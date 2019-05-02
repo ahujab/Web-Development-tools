@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="userValidator" class="com.neu.CoopPortal.validator.UserValidator"></bean>
+		<bean id="userDao" class="com.neu.CoopPortal.DAO.UserDAO" ></bean>
+		<bean id="companyDao" class="com.neu.CoopPortal.DAO.CompanyDAO" ></bean>
+		<bean id="companyValidator" class="com.neu.CoopPortal.validator.CompanyValidator"></bean>
+		
+		<bean id="jobsValidator" class="com.neu.CoopPortal.validator.JobsValidator"></bean>
+		<bean id="jobsDao" class="com.neu.CoopPortal.DAO.JobsDAO" ></bean>	
+</beans>
